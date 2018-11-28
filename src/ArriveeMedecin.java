@@ -11,7 +11,7 @@ import outilsjava.*;
 
 /**
  * La classe ArriveeMedecin permet de gérer les ajouts de médecins dans la
- * clinique.
+ * clinique. aaaaaa
  */
 
 public class ArriveeMedecin implements OutilsConstantes {
