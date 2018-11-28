@@ -1,5 +1,5 @@
 /**
- * Auteurs : TODO et Soti
+ * Auteurs : Maxime Dery, Jean-Sébastien Beaulne et Soti
  * Fichier : DepartMedecin.java
  * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonnière)
  * Date    : 28 novembre 2018
