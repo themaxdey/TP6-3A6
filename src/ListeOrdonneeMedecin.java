@@ -33,6 +33,8 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 		 * 
 		 * Voir page 5 de l'énoncé du TP6.
 		 */
+		
+		super();
 
 	}
 
@@ -51,6 +53,22 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 		 * 
 		 * Voir page 5 de l'énoncé du TP6.
 		 */
+		
+		ElementMedecin element;
+		
+		if(!super.estVide()) {
+			
+			ListIterator<ElementMedecin> iterateurTemp = super.listeIterateur();
+			
+			while(iterateurTemp.hasNext()) {
+				
+				element = iterateurTemp.next();
+				
+				nbTotalPatients += element.getFilePatients().taille();
+				
+			}
+			
+		}
 
 		return nbTotalPatients;
 	}
@@ -74,6 +92,26 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 		 * 
 		 * Voir page 6 de l'énoncé du TP6.
 		 */
+		
+		ElementMedecin element;
+		
+		if(!super.estVide()) {
+			
+			ListIterator<ElementMedecin> iterateurTemp = super.listeIterateur();
+			
+			while(iterateurTemp.hasNext() && !trouve) {
+				
+				element = iterateurTemp.next();
+				
+				if(element.getFilePatients().estPresent(patient)) {
+					
+					trouve = true;
+					
+				}
+				
+			}
+			
+		}
 
 		return trouve;
 	}
@@ -104,6 +142,69 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 		 * 
 		 * Voir pages 6 et 7 de l'énoncé du TP6.
 		 */
+		
+		ElementMedecin element;
+		Patient patient;
+		
+		if(!super.estVide()) {
+			
+			ListIterator<ElementMedecin> iterateurTemp = super.listeIterateur();
+			
+			while(iterateurTemp.hasNext()) {
+				
+				element = iterateurTemp.next();
+				
+				if(element.getFilePatients().estVide()) {
+					
+					element.afficherElementMedecin();
+					
+					iterateurTemp.remove();
+					
+					System.out.println(MESS_PEUT_QUITTER);
+					
+					OutilsLecture.lireEntree(QUEST_CONTINUER);
+					
+				}
+				
+			}
+			
+			iterateurTemp = super.listeIterateur();
+			
+			while(iterateurTemp.hasNext()) {
+				
+				element = iterateurTemp.next();
+				
+				if(!element.getFilePatients().estVide()) {
+					
+					element.afficherElementMedecin();
+					
+					System.out.println(MESS_DOIT_VACCINER);
+					
+					while(!element.getFilePatients().estVide()) {
+						
+						patient = element.getFilePatients().retirerDebut();
+						
+						patient.afficherPatient();
+						
+						System.out.println(MESS_VACCINE);
+						
+						OutilsLecture.lireEntree(QUEST_CONTINUER);
+						
+					}
+					
+					element.afficherElementMedecin();
+					
+				}
+				
+				iterateurTemp.remove();
+				
+				System.out.println(MESS_PEUT_QUITTER);
+				
+				OutilsLecture.lireEntree(QUEST_CONTINUER);
+				
+			}
+			
+		}
 		
 	}
 
