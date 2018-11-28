@@ -21,6 +21,8 @@ public class ArriveeMedecin implements OutilsConstantes {
 	 * 
 	 * @param clinique
 	 *            La clinique.
+	 *            
+	 *            test
 	 */
 
 	public ArriveeMedecin( Clinique clinique ) {
