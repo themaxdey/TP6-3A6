@@ -1,3 +1,5 @@
+import javafx.scene.media.Media;
+
 /**
  * Auteurs : Maxime Dery, Jean-Sébastien Beaulne et Soti
  * Fichier : ElementMedecin.java
@@ -26,10 +28,11 @@ public class ElementMedecin implements Comparable<ElementMedecin> {
 	public ElementMedecin() {
 
 		/**
-		 * TODO (À COMPLÉTER). 
 		 * 
 		 * Voir page 5 de l'énoncé du TP6.
 		 */
+		
+		this(new Medecin());
 
 	}
 
@@ -45,10 +48,13 @@ public class ElementMedecin implements Comparable<ElementMedecin> {
 	public ElementMedecin( Medecin med ) {
 
 		/**
-		 * TODO (À COMPLÉTER). 
 		 * 
 		 * Voir page 5 de l'énoncé du TP6.
 		 */
+		
+		this.medecin = med;
+		
+		filePatients = new FileAttente<Patient>();
 
 	}
 
@@ -93,10 +99,13 @@ public class ElementMedecin implements Comparable<ElementMedecin> {
 	public void afficherElementMedecin() {
 
 		/**
-		 * TODO (À COMPLÉTER). 
 		 * 
 		 * Voir page 5 de l'énoncé du TP6.
 		 */
+		
+		medecin.afficherMedecin();
+		
+		System.out.println( "Nombre de patients pour ce médecin : " + filePatients.taille());
 
 	}
 
