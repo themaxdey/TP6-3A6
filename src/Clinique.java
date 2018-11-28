@@ -24,14 +24,15 @@ public class Clinique {
 	 * @param nom
 	 *            Le nom de la clinique.
 	 */
-	
+
 	public Clinique( String nom ) {
-		
+
 		/**
-		 * TODO (À COMPLÉTER). 
 		 * 
 		 * Voir page 8 de l'énoncé du TP6.
 		 */
+
+		nomClinique = nom;
 
 	}
 
@@ -73,21 +74,24 @@ public class Clinique {
 
 	public void afficherClinique() {
 		// Constantes de la méthode.
-		
+
 		final String TITRE = "\nInformations sur la clinique.";
 
 		final String MESS_FIN_INFO = "\nFin des informations sur la clinique.";
 
 		// Code de la méthode.
-		
+
 		System.out.println( TITRE );
 
-
 		/**
-		 * TODO (À COMPLÉTER). 
 		 * 
 		 * Voir page 8 de l'énoncé du TP6.
 		 */
+
+		System.out.println( "\nInformations pour la clinique " + getNomClinique() );
+		System.out.println( "\nNombre de médecin : " + listeMedecins.taille() );
+		System.out.println( "\nNombre total de patiens : " + listeMedecins.obtenirNbTotalPatients() );
+		System.out.println( listeMedecins.afficherListeMedecins() );
 
 		System.out.println( MESS_FIN_INFO );
 	}
@@ -99,23 +103,19 @@ public class Clinique {
 
 	public void terminerJournee() {
 		// Constantes de la méthode.
-		
-		final String MESS_PATIENTS = "\nIl y a encore des patients qui "
-				+ "attendent pour se faire vacciner.";
 
-		final String MESS_MEDECINS = "\nIl y a encore des médecins "
-				+ "dans la clinique.";
+		final String MESS_PATIENTS = "\nIl y a encore des patients qui " + "attendent pour se faire vacciner.";
 
-		final String MESS_VIDE = "\nLa clinique est vide. "
-				+ "Bonne fin de journée !";
+		final String MESS_MEDECINS = "\nIl y a encore des médecins " + "dans la clinique.";
+
+		final String MESS_VIDE = "\nLa clinique est vide. " + "Bonne fin de journée !";
 
 		// Code de la méthode.
-		
+
 		boolean viderClinique = false;
 
-
 		/**
-		 * TODO (À COMPLÉTER). 
+		 * TODO (À COMPLÉTER).
 		 * 
 		 * Voir page 9 de l'énoncé du TP6.
 		 */
