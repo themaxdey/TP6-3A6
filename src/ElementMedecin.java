@@ -1,27 +1,26 @@
-import javafx.scene.media.Media;
 
 /**
- * Auteurs : Maxime Dery, Jean-Sébastien Beaulne et Soti
+ * Auteurs : Maxime Dery, Jean-Sï¿½bastien Beaulne et Soti
  * Fichier : ElementMedecin.java
- * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonnière)
+ * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonniï¿½re)
  * Date    : 28 novembre 2018
  */
 
 /**
- * La classe ElementMedecin permet de gérer un élément de la liste chaînée
- * ordonnée des médecins. Cette classe implémente l'interface Comparable.
+ * La classe ElementMedecin permet de gï¿½rer un ï¿½lï¿½ment de la liste chaï¿½nï¿½e
+ * ordonnï¿½e des mï¿½decins. Cette classe implï¿½mente l'interface Comparable.
  */
 
 public class ElementMedecin implements Comparable<ElementMedecin> {
-	// Un élément de la liste ordonnée des médecins est composé d'un médecin
-	// et d'une file d'attente des patients pour ce médecin.
+	// Un ï¿½lï¿½ment de la liste ordonnï¿½e des mï¿½decins est composï¿½ d'un mï¿½decin
+	// et d'une file d'attente des patients pour ce mï¿½decin.
 
 	private Medecin medecin;
 	private FileAttente<Patient> filePatients;
 
 	/**
 	 * Le premier constructeur ElementMedecin() permet de construire un objet de
-	 * la liste ordonnée des médecins. C'est la construction d'un médecin de
+	 * la liste ordonnï¿½e des mï¿½decins. C'est la construction d'un mï¿½decin de
 	 * base avec aucun patient.
 	 */
 
@@ -29,7 +28,7 @@ public class ElementMedecin implements Comparable<ElementMedecin> {
 
 		/**
 		 * 
-		 * Voir page 5 de l'énoncé du TP6.
+		 * Voir page 5 de l'ï¿½noncï¿½ du TP6.
 		 */
 		
 		this(new Medecin());
@@ -37,19 +36,19 @@ public class ElementMedecin implements Comparable<ElementMedecin> {
 	}
 
 	/**
-	 * Le deuxième constructeur ElementMedecin() permet de construire un objet
-	 * de la liste ordonnée des médecins. C'est la construction d'un médecin
-	 * reçu en paramètre avec aucun patient.
+	 * Le deuxiï¿½me constructeur ElementMedecin() permet de construire un objet
+	 * de la liste ordonnï¿½e des mï¿½decins. C'est la construction d'un mï¿½decin
+	 * reï¿½u en paramï¿½tre avec aucun patient.
 	 * 
 	 * @param med
-	 *            Un médecin.
+	 *            Un mï¿½decin.
 	 */
 
 	public ElementMedecin( Medecin med ) {
 
 		/**
 		 * 
-		 * Voir page 5 de l'énoncé du TP6.
+		 * Voir page 5 de l'ï¿½noncï¿½ du TP6.
 		 */
 		
 		this.medecin = med;
@@ -59,10 +58,10 @@ public class ElementMedecin implements Comparable<ElementMedecin> {
 	}
 
 	/**
-	 * L'accesseur getMedecin() permet de retourner le médecin d'un élément de
-	 * la liste ordonnée des médecins.
+	 * L'accesseur getMedecin() permet de retourner le mï¿½decin d'un ï¿½lï¿½ment de
+	 * la liste ordonnï¿½e des mï¿½decins.
 	 * 
-	 * @return Le médecin.
+	 * @return Le mï¿½decin.
 	 */
 
 	public Medecin getMedecin() {
@@ -70,10 +69,10 @@ public class ElementMedecin implements Comparable<ElementMedecin> {
 	}
 
 	/**
-	 * Le mutateur setMedecin() permet d'initialiser le champ privé medecin.
+	 * Le mutateur setMedecin() permet d'initialiser le champ privï¿½ medecin.
 	 * 
 	 * @param med
-	 *            Un médecin.
+	 *            Un mï¿½decin.
 	 */
 
 	public void setMedecin( Medecin med ) {
@@ -82,7 +81,7 @@ public class ElementMedecin implements Comparable<ElementMedecin> {
 
 	/**
 	 * L'accesseur getFilePatients() permet de retourner la file d'attente des
-	 * patients pour un médecin d'un élément de la liste ordonnée des médecins.
+	 * patients pour un mï¿½decin d'un ï¿½lï¿½ment de la liste ordonnï¿½e des mï¿½decins.
 	 * 
 	 * @return La file d'attente des patients.
 	 */
@@ -92,31 +91,31 @@ public class ElementMedecin implements Comparable<ElementMedecin> {
 	}
 
 	/**
-	 * La méthode publique afficherElementMedecin() permet d'afficher les
-	 * différents champs d'un élément de la liste ordonnée des médecins.
+	 * La mï¿½thode publique afficherElementMedecin() permet d'afficher les
+	 * diffï¿½rents champs d'un ï¿½lï¿½ment de la liste ordonnï¿½e des mï¿½decins.
 	 */
 
 	public void afficherElementMedecin() {
 
 		/**
 		 * 
-		 * Voir page 5 de l'énoncé du TP6.
+		 * Voir page 5 de l'ï¿½noncï¿½ du TP6.
 		 */
 		
 		medecin.afficherMedecin();
 		
-		System.out.println( "Nombre de patients pour ce médecin : " + filePatients.taille());
+		System.out.println( "Nombre de patients pour ce mÃ©decin : " + filePatients.taille());
 
 	}
 
 	/**
-	 * Redéfinition de la méthode equals() de la classe Object. Deux objets de
-	 * type ElementMedecin sont égaux lorsque leurs médecins (Medecin) sont
-	 * égaux.
+	 * Redï¿½finition de la mï¿½thode equals() de la classe Object. Deux objets de
+	 * type ElementMedecin sont ï¿½gaux lorsque leurs mï¿½decins (Medecin) sont
+	 * ï¿½gaux.
 	 * 
 	 * @param autreObjet
-	 *            L'autre objet avec lequel on vérifie l'égalité.
-	 * @return true si l'objet courant et l'autre objet sont égaux et false dans
+	 *            L'autre objet avec lequel on vï¿½rifie l'ï¿½galitï¿½.
+	 * @return true si l'objet courant et l'autre objet sont ï¿½gaux et false dans
 	 *         le cas contraire.
 	 */
 
@@ -142,16 +141,16 @@ public class ElementMedecin implements Comparable<ElementMedecin> {
 	}
 
 	/**
-	 * Implémentation de la méthode compareTo() de l'interface Comparable. Un
+	 * Implï¿½mentation de la mï¿½thode compareTo() de l'interface Comparable. Un
 	 * objet de type ElementMedecin est plus petit qu'un autre objet de type
-	 * ElementMedecin lorsque le médecin (Medecin) du premier objet est plus
-	 * petit que le médecin (Medecin) du deuxième objet.
+	 * ElementMedecin lorsque le mï¿½decin (Medecin) du premier objet est plus
+	 * petit que le mï¿½decin (Medecin) du deuxiï¿½me objet.
 	 * 
 	 * @param autreObjet
-	 *            L'autre objet à comparer.
+	 *            L'autre objet ï¿½ comparer.
 	 * @return <0 si l'objet courant est plus petit que l'autre objet, >0 si
 	 *         l'objet courant est plus grand que l'autre objet et 0 si l'objet
-	 *         courant est égal à l'autre objet.
+	 *         courant est ï¿½gal ï¿½ l'autre objet.
 	 */
 
 	@Override

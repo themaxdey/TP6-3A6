@@ -1,7 +1,7 @@
 /**
- * Auteurs : Maxime Dery, Jean-Sébastien Beaulne et Soti
+ * Auteurs : Maxime Dery, Jean-SÃ©bastien Beaulne et Soti
  * Fichier : ConsulterMedecin.java
- * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonnière)
+ * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonniï¿½re)
  * Date    : 28 novembre 2018
  */
 
@@ -10,14 +10,14 @@
 import outilsjava.*;
 
 /**
- * La classe ConsulterMedecin permet de gérer les consultations de médecins de
+ * La classe ConsulterMedecin permet de gï¿½rer les consultations de mï¿½decins de
  * la clinique.
  */
 
 public class ConsulterMedecin implements OutilsConstantes {
 	/**
-	 * Le constructeur ConsulterMedecin() permet de gérer les consultations de
-	 * médecins de la clinique.
+	 * Le constructeur ConsulterMedecin() permet de gï¿½rer les consultations de
+	 * mï¿½decins de la clinique.
 	 * 
 	 * @param clinique
 	 *            La clinique.
@@ -26,13 +26,13 @@ public class ConsulterMedecin implements OutilsConstantes {
 	public ConsulterMedecin( Clinique clinique ) {
 		// Constantes du constructeur.
 		
-		final String TITRE = "\nConsultation d'un médecin.\n";
+		final String TITRE = "\nConsultation d'un mï¿½decin.\n";
 
 		final String AUCUN_MEDECIN = "\nErreur, impossible de consulter un "
-				+ "médecin, car il n'y a pas de médecin dans la clinique.";
+				+ "mï¿½decin, car il n'y a pas de mï¿½decin dans la clinique.";
 
 		final String AUTRE_CONSULTATION = "\nVoulez-vous consulter "
-				+ "un autre médecin (O ou N) ? ";
+				+ "un autre mï¿½decin (O ou N) ? ";
 
 		// Code du constructeur.
 
@@ -46,9 +46,9 @@ public class ConsulterMedecin implements OutilsConstantes {
 
 
 				/**
-				 * TODO (À COMPLÉTER). 
+				 * TODO (ï¿½ COMPLï¿½TER). 
 				 * 
-				 * Voir page 10 de l'énoncé du TP6.
+				 * Voir page 10 de l'ï¿½noncï¿½ du TP6.
 				 */
 
 				rep = OutilsLecture.lireOuiNon( AUTRE_CONSULTATION );

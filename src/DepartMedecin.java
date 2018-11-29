@@ -1,7 +1,7 @@
 /**
- * Auteurs : Maxime Dery, Jean-Sébastien Beaulne et Soti
+ * Auteurs : Maxime Dery, Jean-SÃ©bastien Beaulne et Soti
  * Fichier : DepartMedecin.java
- * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonnière)
+ * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonniï¿½re)
  * Date    : 28 novembre 2018
  */
 
@@ -10,13 +10,13 @@
 import outilsjava.*;
 
 /**
- * La classe DepartMedecin permet de gérer les départs de médecins de la
+ * La classe DepartMedecin permet de gï¿½rer les dï¿½parts de mï¿½decins de la
  * clinique.
  */
 
 public class DepartMedecin implements OutilsConstantes {
 	/**
-	 * Le constructeur DepartMedecin() permet de gérer les départs de médecins
+	 * Le constructeur DepartMedecin() permet de gï¿½rer les dï¿½parts de mï¿½decins
 	 * de la clinique.
 	 * 
 	 * @param clinique
@@ -26,20 +26,20 @@ public class DepartMedecin implements OutilsConstantes {
 	public DepartMedecin( Clinique clinique ) {
 		// Constantes du constructeur.
 		
-		final String TITRE = "\nDépart d'un médecin.\n";
+		final String TITRE = "\nDï¿½part d'un mï¿½decin.\n";
 
 		final String AUCUN_MEDECIN = "\nErreur, impossible d'effectuer le "
-				+ "départ d'un médecin, car il n'y a pas de médecin dans "
+				+ "dï¿½part d'un mï¿½decin, car il n'y a pas de mï¿½decin dans "
 				+ "la clinique.";
 
-		final String MEDECIN_QUITTE = "\nCe médecin a quitté la clinique.";
+		final String MEDECIN_QUITTE = "\nCe mï¿½decin a quittï¿½ la clinique.";
 
 		final String DEVENU_VIDE = "\nImpossible d'effectuer d'autres"
-				+ " départs de médecins, car il n'y a plus de médecins"
+				+ " dï¿½parts de mï¿½decins, car il n'y a plus de mï¿½decins"
 				+ " dans la clinique.";
 
 		final String AUTRE_DEPART = "\nVoulez-vous effectuer "
-				+ "le départ d'un autre médecin (O ou N) ? ";
+				+ "le dï¿½part d'un autre mï¿½decin (O ou N) ? ";
 
 		// Code du constructeur.
 
@@ -53,9 +53,9 @@ public class DepartMedecin implements OutilsConstantes {
 
 
 				/**
-				 * TODO (À COMPLÉTER). 
+				 * TODO (ï¿½ COMPLï¿½TER). 
 				 * 
-				 * Voir page 11 de l'énoncé du TP6.
+				 * Voir page 11 de l'ï¿½noncï¿½ du TP6.
 				 */
 
 

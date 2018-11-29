@@ -1,16 +1,16 @@
 /**
- * Auteurs : Maxime Dery, Jean-Sébastien Beaulne et Soti
+ * Auteurs : Maxime Dery, Jean-SÃ©bastien Beaulne et Soti
  * Fichier : Clinique.java
- * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonnière)
+ * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonniÃ¨re)
  * Date    : 28 novembre 2018
  */
 
 /**
- * La classe Clinique permet de gérer une clinique.
+ * La classe Clinique permet de gÃ¨rer une clinique.
  */
 
 public class Clinique {
-	/* Une clinique est composé d'un nom et d'une liste de médecins. */
+	/* Une clinique est composÃ© d'un nom et d'une liste de mÃ©decins. */
 
 	private String nomClinique;
 
@@ -18,7 +18,7 @@ public class Clinique {
 
 	/**
 	 * Le constructeur Clinique() permet de construire une clinique connaissant
-	 * son nom. Au début, la clinique ne contient aucun médecin et aucun
+	 * son nom. Au dÃ©but, la clinique ne contient aucun mÃ©decin et aucun
 	 * patient.
 	 * 
 	 * @param nom
@@ -29,7 +29,7 @@ public class Clinique {
 
 		/**
 		 * 
-		 * Voir page 8 de l'énoncé du TP6.
+		 * Voir page 8 de l'ï¿½noncï¿½ du TP6.
 		 */
 
 		nomClinique = nom;
@@ -58,9 +58,9 @@ public class Clinique {
 	}
 
 	/**
-	 * L'accesseur getListeMedecins() permet de retourner la liste des médecins.
+	 * L'accesseur getListeMedecins() permet de retourner la liste des mï¿½decins.
 	 * 
-	 * @return La liste des médecins.
+	 * @return La liste des mï¿½decins.
 	 */
 
 	public ListeOrdonneeMedecin<ElementMedecin> getListeMedecins() {
@@ -68,56 +68,55 @@ public class Clinique {
 	}
 
 	/**
-	 * La méthode publique afficherClinique() permet d'afficher les différentes
+	 * La mÃ©thode publique afficherClinique() permet d'afficher les diffÃ©rentes
 	 * informations de la clinique.
 	 */
 
 	public void afficherClinique() {
-		// Constantes de la méthode.
+		// Constantes de la mÃ©thode.
 
 		final String TITRE = "\nInformations sur la clinique.";
 
 		final String MESS_FIN_INFO = "\nFin des informations sur la clinique.";
 
-		// Code de la méthode.
+		// Code de la mÃ©thode.
 
 		System.out.println( TITRE );
 
 		/**
 		 * 
-		 * Voir page 8 de l'énoncé du TP6.
+		 * Voir page 8 de l'ï¿½noncï¿½ du TP6.
 		 */
 
 		System.out.println( "\nInformations pour la clinique " + getNomClinique() );
-		System.out.println( "\nNombre de médecin : " + listeMedecins.taille() );
+		System.out.println( "\nNombre de mÃ©decin : " + listeMedecins.taille() );
 		System.out.println( "\nNombre total de patiens : " + listeMedecins.obtenirNbTotalPatients() );
-		System.out.println( listeMedecins.afficherListeMedecins() );
+		listeMedecins.afficherListeMedecins();
 
 		System.out.println( MESS_FIN_INFO );
 	}
 
 	/**
-	 * La méthode publique terminerJournee() permet de vider la liste des
-	 * médecins. Ce traitement est effectué à la fin de la journée.
+	 * La mÃ©thode publique terminerJournee() permet de vider la liste des
+	 * mÃ©decins. Ce traitement est effectuÃ© Ã  la fin de la journÃ©e.
 	 */
 
 	public void terminerJournee() {
-		// Constantes de la méthode.
+		// Constantes de la mï¿½thode.
 
 		final String MESS_PATIENTS = "\nIl y a encore des patients qui " + "attendent pour se faire vacciner.";
 
-		final String MESS_MEDECINS = "\nIl y a encore des médecins " + "dans la clinique.";
+		final String MESS_MEDECINS = "\nIl y a encore des mÃ©decins " + "dans la clinique.";
 
-		final String MESS_VIDE = "\nLa clinique est vide. " + "Bonne fin de journée !";
+		final String MESS_VIDE = "\nLa clinique est vide. " + "Bonne fin de journÃ©e !";
 
-		// Code de la méthode.
+		// Code de la mï¿½thode.
 
 		boolean viderClinique = false;
 
 		/**
-		 * TODO (À COMPLÉTER).
 		 * 
-		 * Voir page 9 de l'énoncé du TP6.
+		 * Voir page 9 de l'ï¿½noncï¿½ du TP6.
 		 */
 
 		System.out.println( MESS_VIDE );

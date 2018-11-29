@@ -1,7 +1,7 @@
 /**
- * Auteurs : Maxime Dery, Jean-Sébastien Beaulne et Soti
+ * Auteurs : Maxime Dery, Jean-SÃ©bastien Beaulne et Soti
  * Fichier : ListeOrdonneeMedecin.java
- * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonnière)
+ * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonniï¿½re)
  * Date    : 28 novembre 2018
  */
 
@@ -12,10 +12,10 @@ import java.util.*;
 import outilsjava.*;
 
 /**
- * La classe ListeOrdonneeMedecin permet de gérer une liste chaînée ordonnée de
- * médecins. Chaque élément de la liste chaînée est de type ElementMedecin. La
- * liste est en ordre des numéros de médecins. Cette classe hérite de la classe
- * ListeOrdonnee. Cette classe implémente l'interface OutilsConstantes.
+ * La classe ListeOrdonneeMedecin permet de gï¿½rer une liste chaï¿½nï¿½e ordonnï¿½e de
+ * mï¿½decins. Chaque ï¿½lï¿½ment de la liste chaï¿½nï¿½e est de type ElementMedecin. La
+ * liste est en ordre des numï¿½ros de mï¿½decins. Cette classe hï¿½rite de la classe
+ * ListeOrdonnee. Cette classe implï¿½mente l'interface OutilsConstantes.
  */
 
 public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
@@ -23,15 +23,15 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 
 	/**
 	 * Le constructeur ListeOrdonneeMedecin() permet de construire une liste
-	 * chaînée ordonnée vide de ElementMedecin.
+	 * chaï¿½nï¿½e ordonnï¿½e vide de ElementMedecin.
 	 */
 
 	public ListeOrdonneeMedecin() {
 		
 		/**
-		 * TODO (À COMPLÉTER). 
+		 * TODO (ï¿½ COMPLï¿½TER). 
 		 * 
-		 * Voir page 5 de l'énoncé du TP6.
+		 * Voir page 5 de l'ï¿½noncï¿½ du TP6.
 		 */
 		
 		super();
@@ -39,8 +39,8 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 	}
 
 	/**
-	 * La méthode publique obtenirNbTotalPatients() permet de retourner le
-	 * nombre total de patients de la liste ordonnée des médecins.
+	 * La mï¿½thode publique obtenirNbTotalPatients() permet de retourner le
+	 * nombre total de patients de la liste ordonnï¿½e des mï¿½decins.
 	 * 
 	 * @return Le nombre total de patients.
 	 */
@@ -49,9 +49,9 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 		int nbTotalPatients = 0;
 
 		/**
-		 * TODO (À COMPLÉTER). 
+		 * TODO (ï¿½ COMPLï¿½TER). 
 		 * 
-		 * Voir page 5 de l'énoncé du TP6.
+		 * Voir page 5 de l'ï¿½noncï¿½ du TP6.
 		 */
 		
 		ElementMedecin element;
@@ -74,13 +74,13 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 	}
 
 	/**
-	 * La méthode public chercherPatientListeMedecin() permet de chercher un
-	 * patient dans la liste des médecins. Elle cherche dans la file d'attente
-	 * de chaque élément de la liste des médecins.
+	 * La mï¿½thode public chercherPatientListeMedecin() permet de chercher un
+	 * patient dans la liste des mï¿½decins. Elle cherche dans la file d'attente
+	 * de chaque ï¿½lï¿½ment de la liste des mï¿½decins.
 	 * 
 	 * @param patient
-	 *            Le patient à chercher.
-	 * @return true si le patient a été trouvé quelque part et false dans le cas
+	 *            Le patient ï¿½ chercher.
+	 * @return true si le patient a ï¿½tï¿½ trouvï¿½ quelque part et false dans le cas
 	 *         contraire.
 	 */
 
@@ -88,9 +88,9 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 		boolean trouve = false;
 
 		/**
-		 * TODO (À COMPLÉTER). 
+		 * TODO (ï¿½ COMPLï¿½TER). 
 		 * 
-		 * Voir page 6 de l'énoncé du TP6.
+		 * Voir page 6 de l'ï¿½noncï¿½ du TP6.
 		 */
 		
 		ElementMedecin element;
@@ -117,30 +117,30 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 	}
 
 	/**
-	 * La méthode publique viderListeMedecins() permet pour chaque élément de la
-	 * liste des médecins de retirer (vacciner) tous les patients un par un et
-	 * ensuite de supprimer l'élément. Ce traitement est effectué à la fin de la
-	 * journée.
+	 * La mï¿½thode publique viderListeMedecins() permet pour chaque ï¿½lï¿½ment de la
+	 * liste des mï¿½decins de retirer (vacciner) tous les patients un par un et
+	 * ensuite de supprimer l'ï¿½lï¿½ment. Ce traitement est effectuï¿½ ï¿½ la fin de la
+	 * journï¿½e.
 	 */
 
 	public void viderListeMedecins() {
-		// Constantes de la méthode.
+		// Constantes de la mï¿½thode.
 		
-		final String MESS_PEUT_QUITTER = "\nCe médecin n'a plus de patients "
-				+ "à vacciner. Ce médecin peut donc quitter la clinique.";
+		final String MESS_PEUT_QUITTER = "\nCe mÃ©decin n'a plus de patients "
+				+ "Ã  vacciner. Ce mÃ©decin peut donc quitter la clinique.";
 
-		final String MESS_DOIT_VACCINER = "\nCe médecin doit vacciner tous ses"
+		final String MESS_DOIT_VACCINER = "\nCe mÃ©decin doit vacciner tous ses"
 				+ " patients avant de quitter la clinique.";
 
-		final String MESS_VACCINE = "\nCe patient a été vacciné.";
+		final String MESS_VACCINE = "\nCe patient a Ã©tÃ© vaccinÃ©.";
 
-		// Code de la méthode.
+		// Code de la mï¿½thode.
 		
 		
 		/**
-		 * TODO (À COMPLÉTER). 
+		 * TODO (ï¿½ COMPLï¿½TER). 
 		 * 
-		 * Voir pages 6 et 7 de l'énoncé du TP6.
+		 * Voir pages 6 et 7 de l'ï¿½noncï¿½ du TP6.
 		 */
 		
 		ElementMedecin element;
@@ -209,25 +209,25 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 	}
 
 	/**
-	 * La méthode publique afficherListeMedecins() permet pour chaque élément de
-	 * la liste, d'afficher les renseignements de cet élément.
+	 * La mï¿½thode publique afficherListeMedecins() permet pour chaque ï¿½lï¿½ment de
+	 * la liste, d'afficher les renseignements de cet ï¿½lï¿½ment.
 	 */
 
 	public void afficherListeMedecins() {
-		// Constantes de la méthode.
+		// Constantes de la mï¿½thode.
 
-		final String TITRE = "\nListe des médecins disponibles"
+		final String TITRE = "\nListe des mÃ©decins disponibles"
 				+ " dans la clinique.";
 
-		final String MESS_FIN_LISTE = "\nFin de la liste des médecins.";
+		final String MESS_FIN_LISTE = "\nFin de la liste des mÃ©decins.";
 
 		// Code du constructeur.
 		
 		
 		/**
-		 * TODO (À COMPLÉTER). 
+		 * TODO (ï¿½ COMPLï¿½TER). 
 		 * 
-		 * Voir page 8 de l'énoncé du TP6.
+		 * Voir page 8 de l'ï¿½noncï¿½ du TP6.
 		 */
 		
 		ElementMedecin element;

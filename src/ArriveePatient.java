@@ -1,7 +1,7 @@
 /**
- * Auteurs : Maxime Dery, Jean-Sébastien Beaulne et Soti
+ * Auteurs : Maxime Dery, Jean-SÃ©bastien Beaulne et Soti
  * Fichier : ArriveePatient.java
- * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonnière)
+ * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonniï¿½re)
  * Date    : 28 novembre 2018
  */
 
@@ -16,7 +16,7 @@ import outilsjava.*;
 
 public class ArriveePatient implements OutilsConstantes {
 	/**
-	 * Le constructeur ArriveePatient() permet de gérer les arrivées de patients
+	 * Le constructeur ArriveePatient() permet de gï¿½rer les arrivï¿½es de patients
 	 * dans la clinique.
 	 * 
 	 * @param clinique
@@ -26,10 +26,10 @@ public class ArriveePatient implements OutilsConstantes {
 	public ArriveePatient( Clinique clinique ) {
 		// Constantes du constructeur.
 		
-		final String TITRE = "\nArrivée d'un patient.\n";
+		final String TITRE = "\nArrivï¿½e d'un patient.\n";
 
 		final String AUCUN_MEDECIN = "\nErreur, impossible d'ajouter "
-				+ "un patient, car il n'y a pas de médecin de disponible.";
+				+ "un patient, car il n'y a pas de mï¿½decin de disponible.";
 
 		final String AUTRE_AJOUT = "\nVoulez-vous ajouter "
 				+ "un autre patient (O ou N) ? ";
@@ -46,9 +46,9 @@ public class ArriveePatient implements OutilsConstantes {
 
 				
 				/**
-				 * TODO (À COMPLÉTER). 
+				 * TODO (ï¿½ COMPLï¿½TER). 
 				 * 
-				 * Voir page 12 de l'énoncé du TP6.
+				 * Voir page 12 de l'ï¿½noncï¿½ du TP6.
 				 */
 
 

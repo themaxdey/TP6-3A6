@@ -1,7 +1,7 @@
 /**
- * Auteurs : Maxime Dery, Jean-Sébastien Beaulne et Soti
+ * Auteurs : Maxime Dery, Jean-SÃ©bastien Beaulne et Soti
  * Fichier : PrincipalTp6.java
- * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonnière)
+ * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonniï¿½re)
  * Date    : 28 novembre 2018
  */
 
@@ -12,11 +12,11 @@ import java.util.*;
 import outilsjava.*;
 
 /**
- * La classe PrincipalTp6 permet de gérer un menu principal pour pour le TP6.
- * Programme de vaccination contre la grippe saisonnière pour illustrer le
- * concept de liste chaînée ordonnée et de file d'attente.
+ * La classe PrincipalTp6 permet de gï¿½rer un menu principal pour pour le TP6.
+ * Programme de vaccination contre la grippe saisonniï¿½re pour illustrer le
+ * concept de liste chaï¿½nï¿½e ordonnï¿½e et de file d'attente.
  * 
- * Cette classe implémente l'interface OutilsConstantes.
+ * Cette classe implï¿½mente l'interface OutilsConstantes.
  */
 
 public class PrincipalTp6  implements OutilsConstantes {
@@ -26,8 +26,8 @@ public class PrincipalTp6  implements OutilsConstantes {
 	private static final String NOM_CLINIQUE = "Montmopital";
 
 	/**
-	 * Le constructeur PrincipalTp6 permet de gérer un menu principal pour
-	 * faire la vaccination contre la grippe saisonnière.
+	 * Le constructeur PrincipalTp6 permet de gï¿½rer un menu principal pour
+	 * faire la vaccination contre la grippe saisonniï¿½re.
 	 */
 
 	public PrincipalTp6() {
@@ -46,12 +46,12 @@ public class PrincipalTp6  implements OutilsConstantes {
 		// Noms des mois.
 
 		final String[] TAB_MOIS = { 
-				"janvier", "février", "mars", "avril", "mai", "juin", 
-				"juillet", "août", "septembre", "octobre", "novembre",
-				"décembre" };
+				"janvier", "fï¿½vrier", "mars", "avril", "mai", "juin", 
+				"juillet", "aoï¿½t", "septembre", "octobre", "novembre",
+				"dï¿½cembre" };
 
 		final String MESS_BIENVENUE = "\nBienvenue au programme de "
-				+ "vaccination contre la grippe saisonnière";
+				+ "vaccination contre la grippe saisonniï¿½re";
 		
 		// Code du constructeur.
 
@@ -65,17 +65,17 @@ public class PrincipalTp6  implements OutilsConstantes {
 
 		String menuPrincipal = 
 				"\nMenu pour la gestion des vaccins"
-				+ " contre la grippe saisonnière\nDe la clinique "
+				+ " contre la grippe saisonniï¿½re\nDe la clinique "
 				+ NOM_CLINIQUE + "\n" 
 				+ "Date : " + jour + " " + TAB_MOIS[mois]
 				+ " " + annee + "\n\n" 
-				+ "1 : Arrivée d'un médecin\n"
-				+ "2 : Départ d'un médecin\n" 
-				+ "3 : Consulter un médecin\n"
-				+ "4 : Arrivée d'un patient\n" 
+				+ "1 : Arrivï¿½e d'un mï¿½decin\n"
+				+ "2 : Dï¿½part d'un mï¿½decin\n" 
+				+ "3 : Consulter un mï¿½decin\n"
+				+ "4 : Arrivï¿½e d'un patient\n" 
 				+ "5 : Vacciner un patient\n"
 				+ "6 : Informations sur la clinique\n"
-				+ "7 : Terminer la journée";
+				+ "7 : Terminer la journï¿½e";
 
 		char choix;
 
@@ -83,9 +83,9 @@ public class PrincipalTp6  implements OutilsConstantes {
 
 		
 		/**
-		 * TODO (À COMPLÉTER). 
+		 * TODO (ï¿½ COMPLï¿½TER). 
 		 * 
-		 * Voir page 9 de l'énoncé du TP6.
+		 * Voir page 9 de l'ï¿½noncï¿½ du TP6.
 		 */
 
 		
@@ -97,9 +97,9 @@ public class PrincipalTp6  implements OutilsConstantes {
 			case ARRIVEE_MEDECIN:
 
 				/**
-				 * TODO (À COMPLÉTER). 
+				 * TODO (ï¿½ COMPLï¿½TER). 
 				 * 
-				 * Voir page 9 de l'énoncé du TP6.
+				 * Voir page 9 de l'ï¿½noncï¿½ du TP6.
 				 */
 				
 				break;
@@ -107,9 +107,9 @@ public class PrincipalTp6  implements OutilsConstantes {
 			case DEPART_MEDECIN:
 
 				/**
-				 * TODO (À COMPLÉTER). 
+				 * TODO (ï¿½ COMPLï¿½TER). 
 				 * 
-				 * Voir page 9 de l'énoncé du TP6.
+				 * Voir page 9 de l'ï¿½noncï¿½ du TP6.
 				 */
 				
 				break;
@@ -117,9 +117,9 @@ public class PrincipalTp6  implements OutilsConstantes {
 			case CONSULTER_MEDECIN:
 
 				/**
-				 * TODO (À COMPLÉTER). 
+				 * TODO (ï¿½ COMPLï¿½TER). 
 				 * 
-				 * Voir page 9 de l'énoncé du TP6.
+				 * Voir page 9 de l'ï¿½noncï¿½ du TP6.
 				 */
 				
 				break;
@@ -127,9 +127,9 @@ public class PrincipalTp6  implements OutilsConstantes {
 			case ARRIVEE_PATIENT:
 
 				/**
-				 * TODO (À COMPLÉTER). 
+				 * TODO (ï¿½ COMPLï¿½TER). 
 				 * 
-				 * Voir page 9 de l'énoncé du TP6.
+				 * Voir page 9 de l'ï¿½noncï¿½ du TP6.
 				 */
 				
 				break;
@@ -137,9 +137,9 @@ public class PrincipalTp6  implements OutilsConstantes {
 			case VACCINER_PATIENT:
 
 				/**
-				 * TODO (À COMPLÉTER). 
+				 * TODO (ï¿½ COMPLï¿½TER). 
 				 * 
-				 * Voir page 9 de l'énoncé du TP6.
+				 * Voir page 9 de l'ï¿½noncï¿½ du TP6.
 				 */
 				
 				break;
@@ -147,9 +147,9 @@ public class PrincipalTp6  implements OutilsConstantes {
 			case INFOS_CLINIQUE:
 
 				/**
-				 * TODO (À COMPLÉTER). 
+				 * TODO (ï¿½ COMPLï¿½TER). 
 				 * 
-				 * Voir page 9 de l'énoncé du TP6.
+				 * Voir page 9 de l'ï¿½noncï¿½ du TP6.
 				 */
 				
 				break;
@@ -157,9 +157,9 @@ public class PrincipalTp6  implements OutilsConstantes {
 			case TERMINER_JOURNEE:
 
 				/**
-				 * TODO (À COMPLÉTER). 
+				 * TODO (ï¿½ COMPLï¿½TER). 
 				 * 
-				 * Voir page 9 de l'énoncé du TP6.
+				 * Voir page 9 de l'ï¿½noncï¿½ du TP6.
 				 */
 				
 				break;

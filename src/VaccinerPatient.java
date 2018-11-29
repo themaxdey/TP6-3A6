@@ -1,7 +1,7 @@
 /**
- * Auteurs : Maxime Dery, Jean-Sébastien Beaulne et Soti
+ * Auteurs : Maxime Dery, Jean-SÃ©bastien Beaulne et Soti
  * Fichier : VaccinerPatient.java
- * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonnière)
+ * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonniï¿½re)
  * Date    : 28 novembre 2018
  */
 
@@ -11,12 +11,12 @@ import outilsjava.*;
 
 /**
  * La classe VaccinerPatient permet de vacciner des patients de la clinique. Le
- * patient quitte la clinique après son vaccin.
+ * patient quitte la clinique aprï¿½s son vaccin.
  */
 
 public class VaccinerPatient implements OutilsConstantes {
 	/**
-	 * Le constructeur VaccinerPatient() permet de gérer les vaccins de patients
+	 * Le constructeur VaccinerPatient() permet de gï¿½rer les vaccins de patients
 	 * de la clinique.
 	 * 
 	 * @param clinique
@@ -32,7 +32,7 @@ public class VaccinerPatient implements OutilsConstantes {
 						+ "patient, car il n'y a pas de patient dans "
 						+ "la clinique.";
 
-		final String PATIENT_VACCINE = "\nCe patient a été vacciné.";
+		final String PATIENT_VACCINE = "\nCe patient a ï¿½tï¿½ vaccinï¿½.";
 
 		final String DEVENU_VIDE = "\nImpossible d'effectuer d'autres"
 						+ " vaccins, car il n'y a plus de patients dans "
@@ -53,9 +53,8 @@ public class VaccinerPatient implements OutilsConstantes {
 
 				
 				/**
-				 * TODO (À COMPLÉTER). 
 				 * 
-				 * Voir page 13 de l'énoncé du TP6.
+				 * Voir page 13 de l'ï¿½noncï¿½ du TP6.
 				 */
 
 
