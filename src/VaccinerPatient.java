@@ -75,7 +75,7 @@ public class VaccinerPatient implements OutilsConstantes {
 						
 						element.getFilePatients().retirerDebut();
 						
-						
+						//On ne trouve pas comment afficher le "patient" qui vient d'etre retirer
 						
 						System.out.println(PATIENT_VACCINE);
 						
