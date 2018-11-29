@@ -230,5 +230,27 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 		 * Voir page 8 de l'énoncé du TP6.
 		 */
 		
+		ElementMedecin element;
+		
+		if(!super.estVide()) {
+			
+			ListIterator<ElementMedecin> iterateurTemp = super.listeIterateur();
+			
+			System.out.println(TITRE);
+			
+			while(iterateurTemp.hasNext()) {
+				
+				element = iterateurTemp.next();
+				
+				element.afficherElementMedecin();
+				
+				OutilsLecture.lireEntree(QUEST_CONTINUER);
+				
+			}
+			
+			System.out.println(MESS_FIN_LISTE);
+			
+		}
+		
 	}
 }
