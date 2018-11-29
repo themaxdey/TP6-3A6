@@ -64,12 +64,12 @@ public class DepartMedecin implements OutilsConstantes {
 				int indice = clinique.getListeMedecins().obtenirIndice(element);
 
 				if( indice < 0){
-					System.out.println("Le médecin " + element.getMedecin().getNoMedecin() + "n'est pas présent dans la clinique.");
+					System.out.println("\nLe médecin " + element.getMedecin().getNoMedecin() + "n'est pas présent dans la clinique.");
 				} else {
 					element = clinique.getListeMedecins().obtenirObjet(indice);
 
 					if(!element.getFilePatients().estVide()){
-						System.out.println("Le médecin " + element.getMedecin().getNoMedecin() + " ne peut pas encore quitter. Il lui reste encore des rendez-vous.");
+						System.out.println("\nLe médecin " + element.getMedecin().getNoMedecin() + " ne peut pas encore quitter. Il lui reste encore des rendez-vous.");
 					} else {
 						clinique.getListeMedecins().supprimer(indice);
 
