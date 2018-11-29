@@ -51,7 +51,7 @@ public class PrincipalTp6  implements OutilsConstantes {
 				"décembre" };
 
 		final String MESS_BIENVENUE = "\nBienvenue au programme de "
-				+ "vaccination contre la grippe saisonnière";
+				+ "vaccination contre la grippe saisonnère";
 		
 		// Code du constructeur.
 
@@ -65,17 +65,17 @@ public class PrincipalTp6  implements OutilsConstantes {
 
 		String menuPrincipal = 
 				"\nMenu pour la gestion des vaccins"
-				+ " contre la grippe saisonnière\nDe la clinique "
+				+ " contre la grippe saisonni�re\nDe la clinique "
 				+ NOM_CLINIQUE + "\n" 
 				+ "Date : " + jour + " " + TAB_MOIS[mois]
 				+ " " + annee + "\n\n" 
-				+ "1 : Arrivée d'un médecin\n"
-				+ "2 : Départ d'un médecin\n" 
-				+ "3 : Consulter un médecin\n"
-				+ "4 : Arrivée d'un patient\n" 
+				+ "1 : Arriv�e d'un m�decin\n"
+				+ "2 : D�part d'un m�decin\n" 
+				+ "3 : Consulter un m�decin\n"
+				+ "4 : Arriv�e d'un patient\n" 
 				+ "5 : Vacciner un patient\n"
 				+ "6 : Informations sur la clinique\n"
-				+ "7 : Terminer la journée";
+				+ "7 : Terminer la journ�e";
 
 		char choix;
 
@@ -87,6 +87,8 @@ public class PrincipalTp6  implements OutilsConstantes {
 		 * 
 		 * Voir page 9 de l'�nonc� du TP6.
 		 */
+		
+		Clinique clinique = new Clinique(NOM_CLINIQUE);
 
 		
 		do {
@@ -95,73 +97,31 @@ public class PrincipalTp6  implements OutilsConstantes {
 
 			switch ( choix ) {
 			case ARRIVEE_MEDECIN:
-
-				/**
-				 * TODO (� COMPL�TER). 
-				 * 
-				 * Voir page 9 de l'�nonc� du TP6.
-				 */
-				
+				ArriveeMedecin(clinique);
 				break;
 
 			case DEPART_MEDECIN:
-
-				/**
-				 * TODO (� COMPL�TER). 
-				 * 
-				 * Voir page 9 de l'�nonc� du TP6.
-				 */
-				
+				DepartMedecin(clinique);
 				break;
 
 			case CONSULTER_MEDECIN:
-
-				/**
-				 * TODO (� COMPL�TER). 
-				 * 
-				 * Voir page 9 de l'�nonc� du TP6.
-				 */
-				
+				ConsulterMedecin(clinique);
 				break;
 
 			case ARRIVEE_PATIENT:
-
-				/**
-				 * TODO (� COMPL�TER). 
-				 * 
-				 * Voir page 9 de l'�nonc� du TP6.
-				 */
-				
+				ArriveePatient(clinique);
 				break;
 
 			case VACCINER_PATIENT:
-
-				/**
-				 * TODO (� COMPL�TER). 
-				 * 
-				 * Voir page 9 de l'�nonc� du TP6.
-				 */
-				
+				VaccinerPatient(clinique);
 				break;
 
 			case INFOS_CLINIQUE:
-
-				/**
-				 * TODO (� COMPL�TER). 
-				 * 
-				 * Voir page 9 de l'�nonc� du TP6.
-				 */
-				
+				clinique.afficherClinique();
 				break;
 
 			case TERMINER_JOURNEE:
-
-				/**
-				 * TODO (� COMPL�TER). 
-				 * 
-				 * Voir page 9 de l'�nonc� du TP6.
-				 */
-				
+				clinique.terminerJournee();
 				break;
 			}
 		} while ( choix != TERMINER_JOURNEE );
