@@ -29,10 +29,10 @@ public class ConsulterMedecin implements OutilsConstantes {
 		final String TITRE = "\nConsultation d'un m�decin.\n";
 
 		final String AUCUN_MEDECIN = "\nErreur, impossible de consulter un "
-				+ "m�decin, car il n'y a pas de m�decin dans la clinique.";
+				+ "médecin, car il n'y a pas de médecin dans la clinique.";
 
 		final String AUTRE_CONSULTATION = "\nVoulez-vous consulter "
-				+ "un autre m�decin (O ou N) ? ";
+				+ "un autre médecin (O ou N) ? ";
 
 		// Code du constructeur.
 

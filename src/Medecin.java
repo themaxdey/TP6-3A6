@@ -1,7 +1,7 @@
 /**
  * Auteur  : Soti
  * Fichier : Medecin.java
- * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonnière)
+ * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonniï¿½re)
  * Date    : 28 novembre 2018
  */
 
@@ -10,19 +10,19 @@
 import outilsjava.*;
 
 /**
- * La classe Medecin contient les informations et les méthodes pour un médecin.
- * La classe Medecin implémente l'interface Comparable.
+ * La classe Medecin contient les informations et les mï¿½thodes pour un mï¿½decin.
+ * La classe Medecin implï¿½mente l'interface Comparable.
  */
 
 public class Medecin implements Comparable<Medecin> {
-	// Champs d'instance privés de la classe Medecin.
+	// Champs d'instance privï¿½s de la classe Medecin.
 
-	private String noMedecin; // Sert de clé.
+	private String noMedecin; // Sert de clï¿½.
 	private String nomMedecin;
 	private String codeSpecialite;
 
 	/**
-	 * Le constructeur Medecin() permet de construire un médecin de base.
+	 * Le constructeur Medecin() permet de construire un mï¿½decin de base.
 	 */
 
 	public Medecin() {
@@ -30,15 +30,15 @@ public class Medecin implements Comparable<Medecin> {
 	}
 
 	/**
-	 * Le constructeur Medecin() permet de construire un médecin avec des
+	 * Le constructeur Medecin() permet de construire un mï¿½decin avec des
 	 * valeurs.
 	 * 
 	 * @param no
-	 *            Un numéro de médecin.
+	 *            Un numï¿½ro de mï¿½decin.
 	 * @param nom
-	 *            Un nom de médecin.
+	 *            Un nom de mï¿½decin.
 	 * @param code
-	 *            Un code de spécialité.
+	 *            Un code de spï¿½cialitï¿½.
 	 */
 
 	public Medecin( String no, String nom, String code ) {
@@ -48,10 +48,10 @@ public class Medecin implements Comparable<Medecin> {
 	}
 
 	/**
-	 * Le mutateur setNoMedecin() permet d'initialiser le champ privé noMedecin.
+	 * Le mutateur setNoMedecin() permet d'initialiser le champ privï¿½ noMedecin.
 	 * 
 	 * @param no
-	 *            Un numéro de médecin.
+	 *            Un numï¿½ro de mï¿½decin.
 	 */
 
 	public void setNoMedecin( String no ) {
@@ -59,11 +59,11 @@ public class Medecin implements Comparable<Medecin> {
 	}
 
 	/**
-	 * Le mutateur setNomMedecin() permet d'initialiser le champ privé
+	 * Le mutateur setNomMedecin() permet d'initialiser le champ privï¿½
 	 * nomMedecin.
 	 * 
 	 * @param nom
-	 *            Un nom de médecin.
+	 *            Un nom de mï¿½decin.
 	 */
 
 	public void setNomMedecin( String nom ) {
@@ -71,11 +71,11 @@ public class Medecin implements Comparable<Medecin> {
 	}
 
 	/**
-	 * Le mutateur setCodeSpecialite() permet d'initialiser le champ privé
+	 * Le mutateur setCodeSpecialite() permet d'initialiser le champ privï¿½
 	 * codeSpecialite.
 	 * 
 	 * @param code
-	 *            Un code de spécialité.
+	 *            Un code de spï¿½cialitï¿½.
 	 */
 
 	public void setCodeSpecialite( String code ) {
@@ -83,9 +83,9 @@ public class Medecin implements Comparable<Medecin> {
 	}
 
 	/**
-	 * L'accesseur getNoMedecin() permet de retourner le numéro du médecin.
+	 * L'accesseur getNoMedecin() permet de retourner le numï¿½ro du mï¿½decin.
 	 * 
-	 * @return Le numéro du médecin.
+	 * @return Le numï¿½ro du mï¿½decin.
 	 */
 
 	public String getNoMedecin() {
@@ -93,9 +93,9 @@ public class Medecin implements Comparable<Medecin> {
 	}
 
 	/**
-	 * L'accesseur getNomMedecin() permet de retourner le nom du médecin.
+	 * L'accesseur getNomMedecin() permet de retourner le nom du mï¿½decin.
 	 * 
-	 * @return Le nom du médecin.
+	 * @return Le nom du mï¿½decin.
 	 */
 
 	public String getNomMedecin() {
@@ -103,10 +103,10 @@ public class Medecin implements Comparable<Medecin> {
 	}
 
 	/**
-	 * L'accesseur getCodeSpecialite() permet de retourner le code de specialité
-	 * du médecin.
+	 * L'accesseur getCodeSpecialite() permet de retourner le code de specialitï¿½
+	 * du mï¿½decin.
 	 * 
-	 * @return Le code de spécialité du médecin.
+	 * @return Le code de spï¿½cialitï¿½ du mï¿½decin.
 	 */
 
 	public String getCodeSpecialite() {
@@ -114,8 +114,8 @@ public class Medecin implements Comparable<Medecin> {
 	}
 
 	/**
-	 * La méthode publique lireNoMedecin() permet de lire un numéro de médecin
-	 * et de modifier le champ privé noMedecin.
+	 * La mï¿½thode publique lireNoMedecin() permet de lire un numï¿½ro de mï¿½decin
+	 * et de modifier le champ privï¿½ noMedecin.
 	 */
 
 	public void lireNoMedecin() {
@@ -123,15 +123,15 @@ public class Medecin implements Comparable<Medecin> {
 
 		String no;
 
-		no = OutilsLecture.lireChaineExacte( "Entrez le numéro du médecin ("
+		no = OutilsLecture.lireChaineExacte( "Entrez le numÃ©ro du mÃ©decin ("
 				+ MAX_CAR_NO_MEDECIN + " car.) : ", MAX_CAR_NO_MEDECIN );
 
 		this.setNoMedecin( no );
 	}
 
 	/**
-	 * La méthode publique lireNomMedecin() permet de lire un nom de médecin et
-	 * de modifier le champ privé nomMedecin.
+	 * La mï¿½thode publique lireNomMedecin() permet de lire un nom de mï¿½decin et
+	 * de modifier le champ privï¿½ nomMedecin.
 	 */
 
 	public void lireNomMedecin() {
@@ -139,7 +139,7 @@ public class Medecin implements Comparable<Medecin> {
 
 		String nom;
 
-		nom = OutilsLecture.lireChaineValide( "Entrez le nom du médecin ("
+		nom = OutilsLecture.lireChaineValide( "Entrez le nom du mÃ©decin ("
 				+ MAX_CAR_NOM_MEDECIN + " car. maximum) : ", 1,
 				MAX_CAR_NOM_MEDECIN );
 
@@ -147,8 +147,8 @@ public class Medecin implements Comparable<Medecin> {
 	}
 
 	/**
-	 * La méthode publique lireCodeSpecialite() permet de lire un code de
-	 * spécialité pour un médecin et de modifier le champ privé codeSpecialite.
+	 * La mï¿½thode publique lireCodeSpecialite() permet de lire un code de
+	 * spï¿½cialitï¿½ pour un mï¿½decin et de modifier le champ privï¿½ codeSpecialite.
 	 */
 
 	public void lireCodeSpecialite() {
@@ -156,7 +156,7 @@ public class Medecin implements Comparable<Medecin> {
 
 		String code;
 
-		code = OutilsLecture.lireChaineExacte( "Entrez le code de spécialité ("
+		code = OutilsLecture.lireChaineExacte( "Entrez le code de spÃ©cialitÃ© ("
 				+ MAX_CAR_CODE_SPECIALITE + " car.) : ",
 				MAX_CAR_CODE_SPECIALITE );
 
@@ -164,12 +164,12 @@ public class Medecin implements Comparable<Medecin> {
 	}
 
 	/**
-	 * La méthode publique lireAutresRenseignements() permet de lire un nom et
-	 * un code de spécialité pour un médecin connaissant son numéro de médecin.
+	 * La mï¿½thode publique lireAutresRenseignements() permet de lire un nom et
+	 * un code de spï¿½cialitï¿½ pour un mï¿½decin connaissant son numï¿½ro de mï¿½decin.
 	 */
 
 	public void lireAutresRenseignements() {
-		System.out.println( "\nEntrez les autres renseignements du médecin "
+		System.out.println( "\nEntrez les autres renseignements du mÃ©decin "
 				+ this.getNoMedecin() );
 
 		this.lireNomMedecin();
@@ -177,29 +177,29 @@ public class Medecin implements Comparable<Medecin> {
 	}
 
 	/**
-	 * La méthode publique afficherMedecin() permet d'afficher les différents
-	 * champs d'un médecin.
+	 * La mï¿½thode publique afficherMedecin() permet d'afficher les diffï¿½rents
+	 * champs d'un mï¿½decin.
 	 */
 
 	public void afficherMedecin() {
-		System.out.println( "\nRenseignements sur un médecin\n" );
+		System.out.println( "\nRenseignements sur un mÃ©decin\n" );
 
-		System.out.println( "Numéro du médecin : \t\t\t" 
+		System.out.println( "NumÃ©ro du mÃ©decin : \t\t\t" 
 				+ this.getNoMedecin() );
-		System.out.println( "Nom du médecin : \t\t\t" + this.getNomMedecin() );
-		System.out.println( "Code de spécialité : \t\t\t"
+		System.out.println( "Nom du mÃ©decin : \t\t\t" + this.getNomMedecin() );
+		System.out.println( "Code de spÃ©cialitÃ© : \t\t\t"
 				+ this.getCodeSpecialite() );
 	}
 
 	/**
-	 * Redéfinition de la méthode equals() de la classe Object. Deux objets de
-	 * type Medecin sont égaux lorsque leurs noMedecin sont égaux. On ne fait
-	 * pas de différence entre les caractères minuscules et les caractères
+	 * Redï¿½finition de la mï¿½thode equals() de la classe Object. Deux objets de
+	 * type Medecin sont ï¿½gaux lorsque leurs noMedecin sont ï¿½gaux. On ne fait
+	 * pas de diffï¿½rence entre les caractï¿½res minuscules et les caractï¿½res
 	 * majuscules.
 	 * 
 	 * @param autreObjet
-	 *            L'autre objet avec lequel on vérifie l'égalité.
-	 * @return true si l'objet courant et l'autre objet sont égaux et false dans
+	 *            L'autre objet avec lequel on vï¿½rifie l'ï¿½galitï¿½.
+	 * @return true si l'objet courant et l'autre objet sont ï¿½gaux et false dans
 	 *         le cas contraire.
 	 */
 
@@ -225,17 +225,17 @@ public class Medecin implements Comparable<Medecin> {
 	}
 
 	/**
-	 * Implémentation de la méthode compareTo() de l'interface Comparable. Un
+	 * Implï¿½mentation de la mï¿½thode compareTo() de l'interface Comparable. Un
 	 * objet de type Medecin est plus petit qu'un autre objet de type Medecin
-	 * lorsque le noMedecin du premier objet est alphabétiquement plus petit que
-	 * le noMedecin du deuxième objet. On ne fait pas de différence entre les
-	 * caractères minuscules et les caractères majuscules.
+	 * lorsque le noMedecin du premier objet est alphabï¿½tiquement plus petit que
+	 * le noMedecin du deuxiï¿½me objet. On ne fait pas de diffï¿½rence entre les
+	 * caractï¿½res minuscules et les caractï¿½res majuscules.
 	 * 
 	 * @param autreObjet
-	 *            L'autre objet à comparer.
+	 *            L'autre objet ï¿½ comparer.
 	 * @return <0 si l'objet courant est plus petit que l'autre objet, >0 si
 	 *         l'objet courant est plus grand que l'autre objet et 0 si l'objet
-	 *         courant est égal à l'autre objet.
+	 *         courant est ï¿½gal ï¿½ l'autre objet.
 	 */
 
 	public int compareTo( Medecin autreObjet ) {

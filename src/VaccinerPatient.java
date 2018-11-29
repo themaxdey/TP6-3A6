@@ -32,7 +32,7 @@ public class VaccinerPatient implements OutilsConstantes {
 						+ "patient, car il n'y a pas de patient dans "
 						+ "la clinique.";
 
-		final String PATIENT_VACCINE = "\nCe patient a �t� vaccin�.";
+		final String PATIENT_VACCINE = "\nCe patient a été vacciné.";
 
 		final String DEVENU_VIDE = "\nImpossible d'effectuer d'autres"
 						+ " vaccins, car il n'y a plus de patients dans "

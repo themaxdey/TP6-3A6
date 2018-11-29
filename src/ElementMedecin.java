@@ -1,6 +1,6 @@
 
 /**
- * Auteurs : Maxime Dery, Jean-S�bastien Beaulne et Soti
+ * Auteurs : Maxime Dery, Jean-Sébastien Beaulne et Soti
  * Fichier : ElementMedecin.java
  * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonni�re)
  * Date    : 28 novembre 2018

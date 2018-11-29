@@ -46,12 +46,12 @@ public class PrincipalTp6  implements OutilsConstantes {
 		// Noms des mois.
 
 		final String[] TAB_MOIS = { 
-				"janvier", "f�vrier", "mars", "avril", "mai", "juin", 
-				"juillet", "ao�t", "septembre", "octobre", "novembre",
-				"d�cembre" };
+				"janvier", "février", "mars", "avril", "mai", "juin", 
+				"juillet", "août", "septembre", "octobre", "novembre",
+				"décembre" };
 
 		final String MESS_BIENVENUE = "\nBienvenue au programme de "
-				+ "vaccination contre la grippe saisonni�re";
+				+ "vaccination contre la grippe saisonniére";
 		
 		// Code du constructeur.
 
@@ -65,17 +65,17 @@ public class PrincipalTp6  implements OutilsConstantes {
 
 		String menuPrincipal = 
 				"\nMenu pour la gestion des vaccins"
-				+ " contre la grippe saisonni�re\nDe la clinique "
+				+ " contre la grippe saisonnière\nDe la clinique "
 				+ NOM_CLINIQUE + "\n" 
 				+ "Date : " + jour + " " + TAB_MOIS[mois]
 				+ " " + annee + "\n\n" 
-				+ "1 : Arriv�e d'un m�decin\n"
-				+ "2 : D�part d'un m�decin\n" 
-				+ "3 : Consulter un m�decin\n"
-				+ "4 : Arriv�e d'un patient\n" 
+				+ "1 : Arrivée d'un médecin\n"
+				+ "2 : Départ d'un médecin\n" 
+				+ "3 : Consulter un médecin\n"
+				+ "4 : Arrivée d'un patient\n" 
 				+ "5 : Vacciner un patient\n"
 				+ "6 : Informations sur la clinique\n"
-				+ "7 : Terminer la journ�e";
+				+ "7 : Terminer la journée";
 
 		char choix;
 

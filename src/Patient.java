@@ -1,7 +1,7 @@
 /**
  * Auteur  : Soti
  * Fichier : Patient.java
- * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonnière)
+ * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonniï¿½re)
  * Date    : 28 novembre 2018
  */
 
@@ -10,14 +10,14 @@
 import outilsjava.*;
 
 /**
- * La classe Patient contient les informations et les méthodes pour un patient.
- * La classe Patient implémente l'interface Comparable.
+ * La classe Patient contient les informations et les mï¿½thodes pour un patient.
+ * La classe Patient implï¿½mente l'interface Comparable.
  */
 
 public class Patient implements Comparable<Patient> {
-	// Champs d'instance privés de la classe Patient.
+	// Champs d'instance privï¿½s de la classe Patient.
 
-	private String noAssMaladie; // Sert de clé.
+	private String noAssMaladie; // Sert de clï¿½.
 	private String nomPatient;
 
 	/**
@@ -33,7 +33,7 @@ public class Patient implements Comparable<Patient> {
 	 * valeurs.
 	 * 
 	 * @param no
-	 *            Un numéro d'assurance maladie.
+	 *            Un numï¿½ro d'assurance maladie.
 	 * @param nom
 	 *            Un nom de patient.
 	 */
@@ -44,11 +44,11 @@ public class Patient implements Comparable<Patient> {
 	}
 
 	/**
-	 * Le mutateur setNoAssMaladie() permet d'initialiser le champ privé
+	 * Le mutateur setNoAssMaladie() permet d'initialiser le champ privï¿½
 	 * noAssMaladie.
 	 * 
 	 * @param no
-	 *            Un numéro d'assurance maladie.
+	 *            Un numï¿½ro d'assurance maladie.
 	 */
 
 	public void setNoAssMaladie( String no ) {
@@ -56,7 +56,7 @@ public class Patient implements Comparable<Patient> {
 	}
 
 	/**
-	 * Le mutateur setNomPatient() permet d'initialiser le champ privé
+	 * Le mutateur setNomPatient() permet d'initialiser le champ privï¿½
 	 * nomPatient.
 	 * 
 	 * @param nom
@@ -68,10 +68,10 @@ public class Patient implements Comparable<Patient> {
 	}
 
 	/**
-	 * L'accesseur getNoAssMaladie() permet de retourner le numéro d'assurance
+	 * L'accesseur getNoAssMaladie() permet de retourner le numï¿½ro d'assurance
 	 * maladie du patient.
 	 * 
-	 * @return Le numéro d'assurance maladie du patient.
+	 * @return Le numï¿½ro d'assurance maladie du patient.
 	 */
 
 	public String getNoAssMaladie() {
@@ -89,8 +89,8 @@ public class Patient implements Comparable<Patient> {
 	}
 
 	/**
-	 * La méthode publique lireNoAssMaladie() permet de lire un numéro
-	 * d'assurance maladie et de modifier le champ privé noAssMaladie.
+	 * La mï¿½thode publique lireNoAssMaladie() permet de lire un numï¿½ro
+	 * d'assurance maladie et de modifier le champ privï¿½ noAssMaladie.
 	 */
 
 	public void lireNoAssMaladie() {
@@ -99,7 +99,7 @@ public class Patient implements Comparable<Patient> {
 		String no;
 
 		no = OutilsLecture.lireChaineExacte(
-				"Entrez le numéro d'assurance maladie du patient ("
+				"Entrez le numÃ©ro d'assurance maladie du patient ("
 						+ MAX_CAR_NO_ASS_MALADIE + " car.) : ",
 				MAX_CAR_NO_ASS_MALADIE );
 
@@ -107,8 +107,8 @@ public class Patient implements Comparable<Patient> {
 	}
 
 	/**
-	 * La méthode publique lireNomPatient() permet de lire un nom de patient et
-	 * de modifier le champ privé nomPatient.
+	 * La mï¿½thode publique lireNomPatient() permet de lire un nom de patient et
+	 * de modifier le champ privï¿½ nomPatient.
 	 */
 
 	public void lireNomPatient() {
@@ -124,8 +124,8 @@ public class Patient implements Comparable<Patient> {
 	}
 
 	/**
-	 * La méthode publique lireAutresRenseignements() permet de lire un nom 
-	 * de patient connaissant son numéro d'assurance maladie.
+	 * La mï¿½thode publique lireAutresRenseignements() permet de lire un nom 
+	 * de patient connaissant son numï¿½ro d'assurance maladie.
 	 */
 
 	public void lireAutresRenseignements() {
@@ -136,27 +136,27 @@ public class Patient implements Comparable<Patient> {
 	}
 
 	/**
-	 * La méthode publique afficherPatient() permet d'afficher les différents
+	 * La mï¿½thode publique afficherPatient() permet d'afficher les diffï¿½rents
 	 * champs d'un patient.
 	 */
 
 	public void afficherPatient() {
 		System.out.println( "\nRenseignements sur un patient\n" );
 
-		System.out.println( "Numéro d'assurance maladie du patient : "
+		System.out.println( "NumÃ©ro d'assurance maladie du patient : "
 				+ getNoAssMaladie() );
 		System.out.println( "Nom du patient : \t\t\t" + getNomPatient() );
 	}
 
 	/**
-	 * Redéfinition de la méthode equals() de la classe Object. Deux objets de
-	 * type Patient sont égaux lorsque leurs noAssMaladie sont égaux. On ne fait
-	 * pas de différence entre les caractères minuscules et les caractères
+	 * Redï¿½finition de la mï¿½thode equals() de la classe Object. Deux objets de
+	 * type Patient sont ï¿½gaux lorsque leurs noAssMaladie sont ï¿½gaux. On ne fait
+	 * pas de diffï¿½rence entre les caractï¿½res minuscules et les caractï¿½res
 	 * majuscules.
 	 * 
 	 * @param autreObjet
-	 *            L'autre objet avec lequel on vérifie l'égalité.
-	 * @return true si l'objet courant et l'autre objet sont égaux et false dans
+	 *            L'autre objet avec lequel on vï¿½rifie l'ï¿½galitï¿½.
+	 * @return true si l'objet courant et l'autre objet sont ï¿½gaux et false dans
 	 *         le cas contraire.
 	 */
 
@@ -183,17 +183,17 @@ public class Patient implements Comparable<Patient> {
 	}
 
 	/**
-	 * Implémentation de la méthode compareTo() de l'interface Comparable. Un
+	 * Implï¿½mentation de la mï¿½thode compareTo() de l'interface Comparable. Un
 	 * objet de type Patient est plus petit qu'un autre objet de type Patient
-	 * lorsque le noAssMaladie du premier objet est alphabétiquement plus petit
-	 * que le noAssMaladie du deuxième objet. On ne fait pas de différence entre
-	 * les caractères minuscules et les caractères majuscules.
+	 * lorsque le noAssMaladie du premier objet est alphabï¿½tiquement plus petit
+	 * que le noAssMaladie du deuxiï¿½me objet. On ne fait pas de diffï¿½rence entre
+	 * les caractï¿½res minuscules et les caractï¿½res majuscules.
 	 * 
 	 * @param autreObjet
-	 *            L'autre objet à comparer.
+	 *            L'autre objet ï¿½ comparer.
 	 * @return <0 si l'objet courant est plus petit que l'autre objet, >0 si
 	 *         l'objet courant est plus grand que l'autre objet et 0 si l'objet
-	 *         courant est égal à l'autre objet.
+	 *         courant est ï¿½gal ï¿½ l'autre objet.
 	 */
 
 	@Override

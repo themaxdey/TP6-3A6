@@ -26,20 +26,20 @@ public class DepartMedecin implements OutilsConstantes {
 	public DepartMedecin( Clinique clinique ) {
 		// Constantes du constructeur.
 		
-		final String TITRE = "\nD�part d'un m�decin.\n";
+		final String TITRE = "\nDépart d'un médecin.\n";
 
 		final String AUCUN_MEDECIN = "\nErreur, impossible d'effectuer le "
-				+ "d�part d'un m�decin, car il n'y a pas de m�decin dans "
+				+ "départ d'un médecin, car il n'y a pas de médecin dans "
 				+ "la clinique.";
 
-		final String MEDECIN_QUITTE = "\nCe m�decin a quitt� la clinique.";
+		final String MEDECIN_QUITTE = "\nCe médecin a quitté la clinique.";
 
 		final String DEVENU_VIDE = "\nImpossible d'effectuer d'autres"
-				+ " d�parts de m�decins, car il n'y a plus de m�decins"
+				+ " départs de médecins, car il n'y a plus de médecins"
 				+ " dans la clinique.";
 
 		final String AUTRE_DEPART = "\nVoulez-vous effectuer "
-				+ "le d�part d'un autre m�decin (O ou N) ? ";
+				+ "le départ d'un autre médecin (O ou N) ? ";
 
 		// Code du constructeur.
 
