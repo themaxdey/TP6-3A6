@@ -51,7 +51,7 @@ public class PrincipalTp6  implements OutilsConstantes {
 				"décembre" };
 
 		final String MESS_BIENVENUE = "\nBienvenue au programme de "
-				+ "vaccination contre la grippe saisonniére";
+				+ "vaccination contre la grippe saisonnière";
 		
 		// Code du constructeur.
 
