@@ -1,7 +1,7 @@
 /**
  * Auteurs : Maxime Dery, Jean-Sébastien Beaulne et Soti
  * Fichier : ArriveeMedecin.java
- * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonni�re)
+ * Cours   : 420-3A6-MO (TP6, Vaccination grippe saisonnière)
  * Date    : 28 novembre 2018
  */
 
@@ -10,13 +10,13 @@
 import outilsjava.*;
 
 /**
- * La classe ArriveeMedecin permet de g�rer les ajouts de m�decins dans la
+ * La classe ArriveeMedecin permet de gérer les ajouts de médecins dans la
  * clinique.
  */
 
 public class ArriveeMedecin implements OutilsConstantes {
 	/**
-	 * Le constructeur ArriveeMedecin() permet de g�rer les ajouts de m�decins
+	 * Le constructeur ArriveeMedecin() permet de gérer les ajouts de médecins
 	 * dans la clinique.
 	 * 
 	 * @param clinique
@@ -36,16 +36,38 @@ public class ArriveeMedecin implements OutilsConstantes {
 		// Code du constructeur.
 		
 		char rep = NON;
+		
+		int indice;
 
 		do {
 			System.out.println( TITRE );
 
 			
 			/**
-			 * TODO (� COMPL�TER). 
+			 * TODO (À COMPLÉTER). 
 			 * 
-			 * Voir page 10 de l'�nonc� du TP6.
+			 * Voir page 10 de l'énoncé du TP6.
 			 */
+			
+			ElementMedecin element = new ElementMedecin();
+			
+			element.getMedecin().lireNoMedecin();
+			
+			indice = clinique.getListeMedecins().obtenirIndice(element);
+			
+			if(indice >= 0) {
+				
+				System.out.println("\nLe médecin numéro " + element.getMedecin().getNoMedecin() + " est déjà dans la clinique.");
+				
+			}else {
+				
+				element.getMedecin().lireAutresRenseignements();
+				
+				clinique.getListeMedecins().ajouter(element);
+				
+				System.out.println("\nLe médecin numéro " + element.getMedecin().getNoMedecin() + " à été ajouté.");
+				
+			}
 
 
 			rep = OutilsLecture.lireOuiNon( AUTRE_AJOUT );
