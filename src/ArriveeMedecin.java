@@ -41,13 +41,6 @@ public class ArriveeMedecin implements OutilsConstantes {
 
 		do {
 			System.out.println( TITRE );
-
-			
-			/**
-			 * TODO (À COMPLÉTER). 
-			 * 
-			 * Voir page 10 de l'énoncé du TP6.
-			 */
 			
 			ElementMedecin element = new ElementMedecin();
 			
@@ -68,8 +61,6 @@ public class ArriveeMedecin implements OutilsConstantes {
 				System.out.println("\nLe médecin numéro " + element.getMedecin().getNoMedecin() + " à été ajouté.");
 				
 			}
-
-
 			rep = OutilsLecture.lireOuiNon( AUTRE_AJOUT );
 		} while ( rep == OUI );
 	}

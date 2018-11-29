@@ -26,7 +26,7 @@ public class ConsulterMedecin implements OutilsConstantes {
 	public ConsulterMedecin( Clinique clinique ) {
 		// Constantes du constructeur.
 		
-		final String TITRE = "\nConsultation d'un m�decin.\n";
+		final String TITRE = "\nConsultation d'un médecin.\n";
 
 		final String AUCUN_MEDECIN = "\nErreur, impossible de consulter un "
 				+ "médecin, car il n'y a pas de médecin dans la clinique.";
@@ -37,19 +37,32 @@ public class ConsulterMedecin implements OutilsConstantes {
 		// Code du constructeur.
 
 		char rep = NON;
+		
+		int indice;
 
 		if ( clinique.getListeMedecins().estVide() ) {
 			System.out.println( AUCUN_MEDECIN );
 		} else {
 			do {
 				System.out.println( TITRE );
-
-
-				/**
-				 * TODO (� COMPL�TER). 
-				 * 
-				 * Voir page 10 de l'�nonc� du TP6.
-				 */
+				
+				ElementMedecin element = new ElementMedecin();
+				
+				element.getMedecin().lireNoMedecin();
+				
+				indice = clinique.getListeMedecins().obtenirIndice(element);
+				
+				if(indice < 0) {
+					
+					System.out.println("\nLe médecin numéro " + element.getMedecin().getNoMedecin() + " n'est pas dans la clinique.");
+					
+				}else {
+					
+					element = clinique.getListeMedecins().obtenirObjet(indice);
+					
+					element.afficherElementMedecin();
+					
+				}
 
 				rep = OutilsLecture.lireOuiNon( AUTRE_CONSULTATION );
 			} while ( rep == OUI );
