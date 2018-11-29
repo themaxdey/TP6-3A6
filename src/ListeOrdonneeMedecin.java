@@ -28,12 +28,6 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 
 	public ListeOrdonneeMedecin() {
 		
-		/**
-		 * TODO (� COMPL�TER). 
-		 * 
-		 * Voir page 5 de l'�nonc� du TP6.
-		 */
-		
 		super();
 
 	}
@@ -47,12 +41,6 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 
 	public int obtenirNbTotalPatients() {
 		int nbTotalPatients = 0;
-
-		/**
-		 * TODO (� COMPL�TER). 
-		 * 
-		 * Voir page 5 de l'�nonc� du TP6.
-		 */
 		
 		ElementMedecin element;
 		
@@ -86,12 +74,6 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 
 	public boolean chercherPatientListeMedecin( Patient patient ) {
 		boolean trouve = false;
-
-		/**
-		 * TODO (� COMPL�TER). 
-		 * 
-		 * Voir page 6 de l'�nonc� du TP6.
-		 */
 		
 		ElementMedecin element;
 		
@@ -135,13 +117,6 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 		final String MESS_VACCINE = "\nCe patient a été vacciné.";
 
 		// Code de la m�thode.
-		
-		
-		/**
-		 * TODO (� COMPL�TER). 
-		 * 
-		 * Voir pages 6 et 7 de l'�nonc� du TP6.
-		 */
 		
 		ElementMedecin element;
 		Patient patient;
@@ -222,13 +197,6 @@ public class ListeOrdonneeMedecin<E> extends ListeOrdonnee<ElementMedecin>
 		final String MESS_FIN_LISTE = "\nFin de la liste des médecins.";
 
 		// Code du constructeur.
-		
-		
-		/**
-		 * TODO (� COMPL�TER). 
-		 * 
-		 * Voir page 8 de l'�nonc� du TP6.
-		 */
 		
 		ElementMedecin element;
 		
