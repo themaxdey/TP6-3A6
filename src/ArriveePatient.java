@@ -26,10 +26,10 @@ public class ArriveePatient implements OutilsConstantes {
 	public ArriveePatient( Clinique clinique ) {
 		// Constantes du constructeur.
 		
-		final String TITRE = "\nArriv�e d'un patient.\n";
+		final String TITRE = "\nArrivée d'un patient.\n";
 
 		final String AUCUN_MEDECIN = "\nErreur, impossible d'ajouter "
-				+ "un patient, car il n'y a pas de m�decin de disponible.";
+				+ "un patient, car il n'y a pas de médecin de disponible.";
 
 		final String AUTRE_AJOUT = "\nVoulez-vous ajouter "
 				+ "un autre patient (O ou N) ? ";
@@ -37,20 +37,48 @@ public class ArriveePatient implements OutilsConstantes {
 		// Code du constructeur.
 
 		char rep = NON;
+		
+		int indice;
 
 		if ( clinique.getListeMedecins().estVide() ) {
 			System.out.println( AUCUN_MEDECIN );
 		} else {
 			do {
 				System.out.println( TITRE );
-
 				
-				/**
-				 * TODO (� COMPL�TER). 
-				 * 
-				 * Voir page 12 de l'�nonc� du TP6.
-				 */
-
+				ElementMedecin element = new ElementMedecin();
+				
+				element.getMedecin().lireNoMedecin();
+				
+				indice = clinique.getListeMedecins().obtenirIndice(element);
+				
+				if(indice < 0) {
+					
+					System.out.println("\nLe médecin du patient, numéro " + element.getMedecin().getNoMedecin() + ", n'est pas encore arrivé.");
+					
+				}else {
+					
+					Patient patient = new Patient();
+					
+					patient.lireNoAssMaladie();
+					
+					if(clinique.getListeMedecins().chercherPatientListeMedecin(patient)) {
+						
+						System.out.println("\nLe patient avec le numéro d'assurance maladie suivant: " + patient.getNoAssMaladie() + ", attend déjà pour se faire vacciner.");;
+						
+					}else {
+						
+						patient.lireAutresRenseignements();
+						
+						element = clinique.getListeMedecins().obtenirObjet(indice);
+						
+						element.getFilePatients().ajouterFin(patient);
+						
+						System.out.println("\nLe patient, " + patient.getNomPatient() + ", au numéro d'assurance maladie suivant: " + patient.getNoAssMaladie() + ", attend pour se faire vacciner.");
+						
+					}
+					
+				}
 
 				rep = OutilsLecture.lireOuiNon( AUTRE_AJOUT );
 			} while ( rep == OUI );
