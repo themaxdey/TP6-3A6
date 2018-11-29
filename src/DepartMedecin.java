@@ -53,10 +53,32 @@ public class DepartMedecin implements OutilsConstantes {
 
 
 				/**
-				 * TODO (� COMPL�TER). 
 				 * 
 				 * Voir page 11 de l'�nonc� du TP6.
 				 */
+
+				ElementMedecin element = new ElementMedecin();
+
+				element.getMedecin().lireNoMedecin();
+
+				int indice = clinique.getListeMedecins().obtenirIndice(element);
+
+				if( indice < 0){
+					System.out.println("Le médecin " + element.getMedecin().getNoMedecin() + "n'est pas présent dans la clinique.");
+				} else {
+					element = clinique.getListeMedecins().obtenirObjet(indice);
+
+					if(!element.getFilePatients().estVide()){
+						System.out.println("Le médecin " + element.getMedecin().getNoMedecin() + " ne peut pas encore quitter. Il lui reste encore des rendez-vous.");
+					} else {
+						clinique.getListeMedecins().supprimer(indice);
+
+						element.afficherElementMedecin();
+
+						System.out.println(MEDECIN_QUITTE);
+					}
+				}
+				
 
 
 				if ( clinique.getListeMedecins().estVide() ) {
