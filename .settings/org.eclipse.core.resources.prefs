@@ -1,2 +1,16 @@
 eclipse.preferences.version=1
+encoding//src/ArriveeMedecin.java=UTF-8
+encoding//src/ArriveePatient.java=UTF-8
 encoding//src/Clinique.java=UTF-8
+encoding//src/ConsulterMedecin.java=UTF-8
+encoding//src/DepartMedecin.java=UTF-8
+encoding//src/ElementMedecin.java=UTF-8
+encoding//src/Enfilage.java=UTF-8
+encoding//src/FileAttente.java=UTF-8
+encoding//src/ListeOrdonnee.java=UTF-8
+encoding//src/ListeOrdonneeMedecin.java=UTF-8
+encoding//src/MainTp6.java=UTF-8
+encoding//src/Medecin.java=UTF-8
+encoding//src/Patient.java=UTF-8
+encoding//src/PrincipalTp6.java=UTF-8
+encoding//src/VaccinerPatient.java=UTF-8
