@@ -34,6 +34,8 @@ public class Clinique {
 
 		nomClinique = nom;
 
+		listeMedecins = new ListeOrdonneeMedecin<>();
+
 	}
 
 	/**
@@ -118,6 +120,18 @@ public class Clinique {
 		 * 
 		 * Voir page 9 de l'�nonc� du TP6.
 		 */
+		
+		if(listeMedecins.obtenirNbTotalPatients() != 0){
+			System.out.println(MESS_PATIENTS);
+		} else if (!listeMedecins.estVide()){
+			System.out.println(MESS_MEDECINS);
+		}
+
+		if(viderClinique){
+			listeMedecins.viderListeMedecins();
+		}
+
+
 
 		System.out.println( MESS_VIDE );
 	}
