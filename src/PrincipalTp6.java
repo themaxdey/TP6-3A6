@@ -90,23 +90,23 @@ public class PrincipalTp6  implements OutilsConstantes {
 
 			switch ( choix ) {
 			case ARRIVEE_MEDECIN:
-				ArriveeMedecin(clinique);
+				new ArriveeMedecin(clinique);
 				break;
 
 			case DEPART_MEDECIN:
-				DepartMedecin(clinique);
+				new DepartMedecin(clinique);
 				break;
 
 			case CONSULTER_MEDECIN:
-				ConsulterMedecin(clinique);
+				new ConsulterMedecin(clinique);
 				break;
 
 			case ARRIVEE_PATIENT:
-				ArriveePatient(clinique);
+				new ArriveePatient(clinique);
 				break;
 
 			case VACCINER_PATIENT:
-				VaccinerPatient(clinique);
+				new VaccinerPatient(clinique);
 				break;
 
 			case INFOS_CLINIQUE:
