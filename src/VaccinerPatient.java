@@ -44,19 +44,44 @@ public class VaccinerPatient implements OutilsConstantes {
 		// Code du constructeur.
 
 		char rep = NON;
+		
+		int indice;
 
 		if ( clinique.getListeMedecins().obtenirNbTotalPatients() == 0 ) {
 			System.out.println( AUCUN_PATIENT );
 		} else {
 			do {
 				System.out.println( TITRE );
-
 				
-				/**
-				 * 
-				 * Voir page 13 de l'�nonc� du TP6.
-				 */
-
+				ElementMedecin element = new ElementMedecin();
+				
+				element.getMedecin().lireNoMedecin();
+				
+				indice = clinique.getListeMedecins().obtenirIndice(element);
+				
+				if(indice < 0) {
+					
+					System.out.println("\nLe médecin numéro " + element.getMedecin().getNoMedecin() + " ne peut pas vacciner un patient, car il n'est pas dans la clinique.");
+					
+				}else {
+					
+					element = clinique.getListeMedecins().obtenirObjet(indice);
+					
+					if(element.getFilePatients().estVide()) {
+						
+						System.out.println("\nIl n'y aucun patient qui attend pour se faire vacciner par le médecin numéro " + element.getMedecin().getNoMedecin() + ".");
+						
+					}else{
+						
+						element.getFilePatients().retirerDebut();
+						
+						
+						
+						System.out.println(PATIENT_VACCINE);
+						
+					}
+					
+				}
 
 				if ( clinique.getListeMedecins()
 						.obtenirNbTotalPatients() == 0 ) {
